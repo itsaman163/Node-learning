@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page</title>
+</head>
+
+<body>
+    <%- include('common/header')%>
+        <h1>Name is <%= data.name%>
+        </h1>
+        <h3>Email is <%= data.email%>
+        </h3>
+        <h3>Number is <%=data.number%>
+        </h3>
+        <ul>
+            <%data.lang.forEach((item)=>{ %>
+            <li><%=item%></li>
+            <%})%>
+        </ul>
+</body>
+
+</html>
