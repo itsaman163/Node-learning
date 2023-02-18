@@ -406,4 +406,15 @@ commands in mongo db -
 
 git config --global user.name ""
 git config --global user.email ""
- hello my name is aman
+
+git init
+git status
+git add .
+git commit -m ""
+git remote add origin "URL here"    // for the first time
+git status
+git push -u origin "branch name"
+git checkout "branch name"          // change branch 
+git branch "new branch name"        // To create new branch
+
+
