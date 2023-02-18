@@ -406,5 +406,4 @@ commands in mongo db -
 
 git config --global user.name ""
 git config --global user.email ""
-
-git init helo sir
+ hello my name is aman
