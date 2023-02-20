@@ -16,6 +16,25 @@ help Set-ExecutionPolicy at the PowerShell command prompt.
 5. Type Exit.
 ===================
 
+## git commands
+
+git_link with a video :- https://youtu.be/bb_LoXAC-zE
+
+git config --global user.name ""
+git config --global user.email ""
+
+git init
+git status
+git add .
+git commit -m ""
+git remote add origin "URL here"    // for the first time
+git status
+git push -u origin "branch name"
+git checkout "branch name"          // change branch 
+git branch "new branch name"        // To create new branch
+
+====================
+
 ## Shortcuts in command prompts
 
 >> check mogo db version >>> mongod --version
@@ -395,26 +414,92 @@ commands in mongo db -
             where_cond = brand:"Apple"              // To update the column in colection
     k) db.collectionName.delete({brand:"Apple"})    // To delete the column
 
-    ## Connect Node with MongoDB
-    >> Install mongoDb package  
-            a) npm i mongodb
-            
-    >> connect MongoDb with Node js
-    >> Show data from MongoDB
-    >> Interview Question
+## Connect Node with MongoDB
 
+>> Install mongoDb package  
+    a) npm i mongodb  (package)          
+>> connect MongoDb with Node js
+>> Show data from MongoDB
+>> Interview Question :- Can we connect two dbs in one time?
+>> ref
+file name = connectNodeWithMongodb.js
 
-git config --global user.name ""
-git config --global user.email ""
+## Read Data from MongoDB
+>> read data from mongodb
+    reference = "./readDataFromMongodb.js"
+>> make files for db connection 
+    reference = "./mongodb.js"
+>> handle promise 
+>> Interview Question
 
-git init
-git status
-git add .
-git commit -m ""
-git remote add origin "URL here"    // for the first time
-git status
-git push -u origin "branch name"
-git checkout "branch name"          // change branch 
-git branch "new branch name"        // To create new branch
+## Insert data from Mongodb
+>> Make new file for insert data
+>> import monngodb connection
+>> insert sengle and multiple records
+    ref:- "./insertDataInMongodb.js"
+>> Interview Question 
+    >> how to insert multiple data ?
+    >>> insertMany([{},{}])
 
+## update data from mongodb
+>> make new file for update data
+    ref:- updateDataInMongodb.js
+>> import mongodb connection
+>> update sengle and multiple data
+>> Interview Question 
+    >> how to update multiple data in mongodb
+    >>> with the help of updateMany({where_cond},{$set{variables}})
 
+## Delete data from mongodb
+>> Make new file for delete data
+    ref :- deleteDataFromMongodb.js
+>> import mongodb connection
+>> delete sengle and multiple record
+>> Interview Question
+    >> how to delete multiple records
+    >>> deleteMany
+
+## get api
+>> Create New file for get api
+>> import express 
+>> import dbConnection file
+>> create instance of the express
+
+## Node js Post Api method
+>> Make Post method for API
+>> Send data from postman
+>> Get data in node js by request
+>> Write code for insert data in Mongodb
+>> Interview Question
+        before express 4.6 to get data from body we use body_parser
+        but after express 4.6 we'll use express.json()
+
+## Node js Put API method (for update)
+>> Make PUT method For Api
+>> Send data from postman'
+>> Handle data in node js by request
+>> Write code for update data in mongoDB
+>> Interview Question
+
+## Node js Delete API method 
+>> Make Delete method for API
+>> send data from postman
+>> handle data in node js by request
+>> write code for delete data in Mongodb
+>> Interview Questions 
+
+## start with mongoose
+>> what is mongoose
+    >>> To connect nodejs with database we use mongoose.
+>> difference between Mongoose vs Mongodb Package
+    we are not defining modiles and schema in mongodb
+    but we can define schema and models in mongoose
+    >>> apply validation
+    >>> apply restrictions in fileds etc. 
+>> Install Mongoose
+>> What is schemas
+>> What is Model
+>> Connect Node js and MongoDB with Mongoose
+
+>>> to install mongoose we run the command 
+    npm i mongoose
